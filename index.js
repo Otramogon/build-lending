@@ -6,6 +6,7 @@ $('.project-examples').slick({
     // autoplay: true,
     // autoplaySpeed: 3000,
     dots: true,
+
 });
 
 $('.project-examples').magnificPopup({
@@ -16,3 +17,14 @@ $('.project-examples').magnificPopup({
         enabled:true
     }
 });
+
+
+document.getElementById('burger').onclick = () => {
+    document.getElementById('burger').style.display = "none"
+    document.getElementById('close').style.display = "block"
+}
+
+document.getElementById('close').onclick = () => {
+    document.getElementById('close').style.display = "none"
+    document.getElementById('burger').style.display = "block"
+}

@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="magnific-popup.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 
 <header class="header">
     <ul class="nav-bar">
-        <li class="logo">
-            Логотип\Название
-        </li>
-        <li class="nav-bar-item">
+        <li class="nav-bar-item logo">
             <a href="#main">
-                Главная
+            Логотип\Название
             </a>
-        </li>
+        <li class="not-burger">
         <li class="nav-bar-item">
             <a href="#about-us">
                 Наша команда
@@ -36,6 +34,12 @@
             <a href="#contacts">
                 Контакты
             </a>
+        </li>
+        <li class="nav-bar-item burger " id="burger">
+            <img src="assets/image/open-menu.png">
+        </li>
+        <li class="nav-bar-item close" id="close">
+            <img src="assets/image/cross.png" alt="">
         </li>
 
     </ul>
@@ -59,6 +63,9 @@
                 <div class="about-table-item">
                     <div class="about-table-item-img">
                         <img src="assets/image/research.png" alt="">
+                        <span class="about-us-adaptive">
+                                Профессиональные решения
+                            </span>
                     </div>
                     <div class="about-table-item-text">
                             <span>
@@ -71,6 +78,9 @@
                 <div class="about-table-item">
                     <div class="about-table-item-img">
                         <img src="assets/image/teamwork.png" alt="">
+                        <span class="about-us-adaptive">
+                                 Индивидуальный подход
+                            </span>
                     </div>
                     <div class="about-table-item-text">
                             <span>
@@ -83,6 +93,9 @@
                 <div class="about-table-item">
                     <div class="about-table-item-img">
                         <img src="assets/image/winner.png" alt="">
+                        <span class="about-us-adaptive">
+                                Качество и надежность
+                            </span>
                     </div>
                     <div class="about-table-item-text">
                             <span>
@@ -95,6 +108,9 @@
                 <div class="about-table-item">
                     <div class="about-table-item-img">
                         <img src="assets/image/chronometer.png" alt="">
+                        <span class="about-us-adaptive">
+                               Соблюдение сроков и бюджета
+                            </span>
                     </div>
                     <div class="about-table-item-text">
                             <span>
@@ -108,7 +124,7 @@
     </div>
     </section>
 
-<div class="background">
+
 
 
 
@@ -271,7 +287,7 @@
             </ul>
     </div>
 </footer>
-</div>
+
 
 
 <script src="jquery-3.6.4.min.js"></script>
