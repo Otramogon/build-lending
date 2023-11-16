@@ -408,6 +408,10 @@
         width: 480px;
     }
 
+    .nav-bar {
+        margin: 0 30px;
+    }
+
 }
 
 @media screen and(max-width: 501px) {
@@ -429,6 +433,21 @@
     }
 }
 
-@media screen and(max-width: 470px){
+@media screen and(max-width: 450px){
+    .projects-content {
+        width: 360px;
+    }
 
+    .project {
+        width: 410px;
+    }
+
+    .project-examples {
+        width: 410px;
+    }
+
+    .project-examples img {
+        width: 410px;
+        height: 210px;
+    }
 }
