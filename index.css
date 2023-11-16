@@ -4,6 +4,16 @@
 }
 
 @font-face {
+    font-family: Muller;
+    src: url("assets/fonts/MullerRegular.otf");
+}
+
+@font-face {
+    font-family: Muller Bold;
+    src: url("assets/fonts/MullerBold.otf");
+}
+
+@font-face {
     font-family: Museo700;
     src: url("assets/fonts/Museo700.ttf");
 }
@@ -23,7 +33,7 @@
     src: url("assets/fonts/Museo100.ttf");
 }
 
-*{
+* {
     font-family: Museo300, sans-serif;
     margin: 0 auto;
     padding: 0;
@@ -34,8 +44,14 @@ body {
     /*background-image: url('assets/image/background1.jpg');*/
     /*background-repeat: no-repeat;*/
     /*background-size: cover;*/
-    background-color: rgba(128, 128, 128, 0.1);
     z-index: -1;
+    /*background-color: rgba(209, 209, 209, 0.48);*/
+    /*background: linear-gradient(90deg, rgba(255,219,132,1) 0%, rgba(219,178,50,1) 50%, rgba(208,154,41,1) 100%);*/
+}
+
+.background {
+    background: rgb(200, 148, 40);
+    background: linear-gradient(270deg, rgba(200, 148, 40, 1) 0%, rgba(204, 153, 41, 1) 3%, rgba(202, 155, 39, 1) 15%, rgba(208, 161, 44, 1) 25%, rgba(213, 166, 47, 1) 50%, rgba(214, 170, 49, 1) 60%, rgba(216, 172, 49, 1) 70%, rgba(215, 174, 50, 1) 80%, rgba(215, 174, 50, 1) 90%, rgba(212, 170, 52, 1) 100%);
 }
 
 .container {
@@ -45,11 +61,20 @@ body {
     margin: 0 auto;
 }
 
-.nav-bar {
-    margin: 50px 200px 0px 200px;
+.header {
+    padding: 20px 0px 20px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgb(236, 236, 236);
+    z-index: 5;
+}
+
+.header .nav-bar {
+    margin: 0 auto;
 }
 
 .logo {
@@ -65,11 +90,11 @@ ul {
 }
 
 .nav-bar-item {
+    margin: 0 40px;
     color: white;
     font-size: 22px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5px;
     transition: all ease-in-out 0.2s;
     border-bottom: 1px solid transparent;
 }
@@ -92,81 +117,78 @@ ul {
     font-family: Museo500, sans-serif;
 }
 
+.main-page {
+    padding: 280px 0 60px 0;
+    background-image: url('assets/image/backround.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 .main {
-    padding: 10px;
-    margin-top: 100px;
+    padding: 20px;
+    max-width: 550px;
+    margin-top: -50px;
+    margin-left: 0px;
     font-size: 52px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
     display: flex;
     flex-direction: column;
 }
 
 .work {
     margin-bottom: 10px;
-    text-align: center;
-    font-family: "Museo Sans Cyrl 700", sans-serif;
+    font-family: "Muller Bold", sans-serif;
 }
 
 .where {
-    margin-bottom: 20px;
-    text-align: center;
+    margin: 0 0 20px 0;
     font-size: 40px;
     font-family: "Museo Sans Cyrl 500", sans-serif;
 }
 
+.where span {
+    font-family: "Muller Bold", sans-serif;
+}
+
 .why {
     font-size: 33px;
-    font-family: "Museo Sans Cyrl 300", sans-serif;
-}
-
-.main-page {
-
-}
-
-.main-page:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/image/background-trn.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 0;
-    z-index: -1;
+    font-family: Muller, sans-serif;
 }
 
 .about-us {
-    margin-top: 450px;
+    margin: 150px 0 0 0;
+    max-width: 1070px;
+    /*background: linear-gradient(90deg, rgb(217 181 56) 0%, rgba(219,178,50,1) 50%, rgb(205 154 40) 100%););*/
 }
 
 .about-title {
     font-family: "Museo Sans Cyrl 700", sans-serif;
-    font-size: 48px ;
+    font-size: 48px;
     margin-bottom: 25px;
 }
 
 .about-table-item {
-   display: flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 15px;
 }
 
 .about-table-item-text {
-    font-size: 18px;
+    line-height: 25px;
+    font-size: 20px;
     margin: 0;
     text-align: left;
+    font-family: Muller, sans-serif;
+    color: rgb(22, 22, 22);
 }
 
 .about-table-item-text span {
-    color: rgb(9, 94, 9);
-    font-family: "Museo Sans Cyrl 500", sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: Muller Bold, sans-serif;
 }
 
 .about-table-item-img {
@@ -179,28 +201,50 @@ ul {
 }
 
 .projects {
-    margin-top: 50px;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: -15px;
     padding-top: 40px;
     padding-bottom: 1px;
-    background-color: rgba(209, 209, 209, 0.48);
 }
 
+.project {
 
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-examples {
+    width: 600px;
+}
+
+.project-examples img {
+    border-radius: 15px;
+    width: 600px;
+    height: 350px;
+}
 
 .projects-title {
     text-align: center;
-    font-family: "Museo Sans Cyrl 700", sans-serif;
-    font-size: 46px ;
+    font-family: "Muller Bold", sans-serif;
+    font-size: 46px;
+    margin-bottom: 50px;
 }
 
 .projects-content {
-    margin-top: 50px ;
-    margin-left: 25px;
+    background: #efefef;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 0 18px 0 0;
+    width: 450px;
+    height: 300px;
 }
 
 .projects-content-item-title {
+    margin-bottom: 15px;
     font-family: "Museo Sans Cyrl 500", sans-serif;
-    font-size: 28px ;
+    font-size: 28px;
 }
 
 .projects-content-item-description {
@@ -220,35 +264,26 @@ ul {
     right: -25px;
 }
 
-.project-examples img {
-    border-radius: 15px;
-    width: 375px;
-    height: 220px;
-}
-
 .slick-slide {
     border-radius: 15px;
-    padding: 15px;
-}
 
-.project {
-    margin-bottom: 75px;
 }
 
 .contacts {
-    margin-top: 50px;
+    background-color: rgb(255 220 117 / 61%);
+    padding: 50px 0px;
 }
 
 .contacts-title {
     text-align: center;
     font-family: "Museo Sans Cyrl 700", sans-serif;
-    font-size: 42px ;
+    font-size: 42px;
 }
 
 .contacts-end-title {
     text-align: center;
     font-family: "Museo Sans Cyrl 500", sans-serif;
-    font-size: 34px ;
+    font-size: 34px;
     margin-bottom: 30px;
 }
 
@@ -283,11 +318,11 @@ ul {
 }
 
 .footer {
-    margin-top: 45px;
+    padding: 20px 0;
     border-top: 1px solid rgba(128, 128, 128, 0.11);
 }
 
-.footer .nav-bar{
+.footer .nav-bar {
     margin: 30px 0 30px 0;
     display: flex;
     flex-direction: row;
