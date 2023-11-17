@@ -366,3 +366,47 @@ ul {
 .footer .nav-bar-item a:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.38);;
 }
+
+.responsive-menu {
+    background-color: rgb(236, 236, 236);
+    border-radius: 15px;
+    width: 210px;
+    height: 190px;
+    position: fixed;
+    right: -15px;
+    margin-top: 45px;
+    padding: 35px 35px 35px 20px;
+    z-index: 5;
+    display: none;
+}
+
+.responsive-menu ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-item  {
+    margin: 15px 0px;
+    font-size: 25px;
+    transition: all ease-in-out 0.2s;
+    border-bottom: 1px solid transparent;
+}
+
+.menu-item a {
+    transition: all ease-in-out 0.2s;
+    border-bottom: 1px solid transparent;
+}
+
+.menu-item a:hover {
+    transform: scale(1.05);
+    border-bottom: 1px solid black;
+}
+
+.menu-item a {
+    color: #000000;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Museo500, sans-serif;
+}
