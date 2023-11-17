@@ -331,6 +331,7 @@ ul {
 
 .contacts-content-item span {
     border-bottom: 1px solid black;
+    color: black;
 }
 
 .contacts-content-item img {
