@@ -1,36 +1,36 @@
 @font-face {
     font-family: Neuman;
-    src: url("assets/fonts/neuman.otf");
+    src: url("../../assets/fonts/Neuman.otf");
 }
 
 @font-face {
     font-family: Muller;
-    src: url("assets/fonts/MullerRegular.otf");
+    src: url("../../assets/fonts/MullerRegular.otf");
 }
 
 @font-face {
     font-family: Muller Bold;
-    src: url("assets/fonts/MullerBold.otf");
+    src: url("../../assets/fonts/MullerBold.otf");
 }
 
 @font-face {
     font-family: Museo700;
-    src: url("assets/fonts/Museo700.ttf");
+    src: url("../../assets/fonts/Museo700.ttf");
 }
 
 @font-face {
     font-family: Museo300;
-    src: url("assets/fonts/Museo300.ttf");
+    src: url("../../assets/fonts/Museo300.ttf");
 }
 
 @font-face {
     font-family: Museo500;
-    src: url("assets/fonts/Museo500.ttf");
+    src: url("../../assets/fonts/Museo500.ttf");
 }
 
 @font-face {
     font-family: Museo100;
-    src: url("assets/fonts/Museo100.ttf");
+    src: url("../../assets/fonts/Museo100.ttf");
 }
 
 * {
@@ -135,7 +135,7 @@ ul {
 
 .main-page {
     padding: 280px 0 60px 0;
-    background-image: url('assets/image/backround.jpg');
+    background-image: url('../../assets/image/backround.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -409,4 +409,8 @@ ul {
     cursor: pointer;
     text-decoration: none;
     font-family: Museo500, sans-serif;
+}
+
+:root {
+    --animate-duration: 600ms;
 }
