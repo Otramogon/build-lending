@@ -203,6 +203,10 @@
         width: 95%;
     }
 
+    #logo {
+        display: block;
+    }
+
     .not-burger {
         display: none;
     }
@@ -213,7 +217,8 @@
 
     .nav-bar-item:nth-child(3),
     .nav-bar-item:nth-child(4),
-    .nav-bar-item:nth-child(5){
+    .nav-bar-item:nth-child(5),
+    .nav-bar-item:nth-child(6){
         display: none;
     }
 

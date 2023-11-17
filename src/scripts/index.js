@@ -45,12 +45,14 @@ function init() {
         menu.classList.remove('animate__fadeInRight')
         menu.classList.add('animate__fadeOutRight')
     }
-    logo.onclick = () => {
-        close.style.display = "none"
-        burger.style.display = "block"
-        menu.classList.remove('animate__fadeInRight')
-        menu.classList.add('animate__fadeOutRight')
-    }
+
+        logo.onclick = () => {
+            close.style.display = "none"
+            burger.style.display = "block"
+            menu.classList.remove('animate__fadeInRight')
+            menu.classList.add('animate__fadeOutRight')
+        }
+
 
     burger.onclick = () => {
         burger.style.display = "none"

@@ -103,6 +103,10 @@ ul {
     text-decoration: none;
     font-family: Museo500, sans-serif;
 }
+
+.logo {
+    margin-left: -35px;
+}
 /*burger*/
 .burger img {
     width: 45px;
@@ -413,4 +417,15 @@ ul {
 
 :root {
     --animate-duration: 600ms;
+}
+
+#logo {
+    display: none;
+}
+
+#logo a {
+    color: black;
+    font-size: 22px;
+    margin-right: 120px;
+    border-bottom: 1px solid transparent;
 }
