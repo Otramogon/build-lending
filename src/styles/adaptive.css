@@ -115,6 +115,7 @@
     }
 
     .work {
+        font-size: 47px;
         margin-bottom: 10px;
     }
 
@@ -386,6 +387,9 @@
     .main {
         font-size: 40px;
     }
+    .work {
+        font-size: 40px;
+    }
     .where {
         font-size: 35px;
     }
@@ -456,6 +460,10 @@
         font-size: 32px;
     }
 
+    .work {
+        font-size: 32px;
+    }
+
     .where {
         font-size: 26px;
         margin-bottom: 10px ;
@@ -467,6 +475,7 @@
 
     .about-us-adaptive {
         font-size: 20px;
+        text-align: center;
     }
 
     .about-table-item-img {

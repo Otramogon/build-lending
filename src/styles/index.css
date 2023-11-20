@@ -158,6 +158,7 @@ ul {
 }
 
 .work {
+    font-size: 52px;
     margin-bottom: 10px;
     font-family: "Muller Bold", sans-serif;
 }
@@ -229,7 +230,6 @@ ul {
 }
 
 .projects {
-    border-top: 1px solid rgba(128, 128, 128, 0.2);
     margin-top: -15px;
     padding-top: 40px;
     padding-bottom: 1px;
@@ -303,8 +303,8 @@ ul {
 
 .contacts-title {
     text-align: center;
-    font-family: "Museo Sans Cyrl 700", sans-serif;
-    font-size: 42px;
+    font-family: "Muller Bold", sans-serif;
+    font-size: 46px;
 }
 
 .contacts-end-title {
