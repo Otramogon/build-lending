@@ -140,7 +140,7 @@ ul {
 .main-page {
     padding: 280px 0 60px 0;
     background-image: url('../../assets/image/backround.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -204,6 +204,9 @@ ul {
     text-align: left;
     font-family: Muller, sans-serif;
     color: rgb(22, 22, 22);
+        background: #dcb63a;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .about-us-adaptive {
