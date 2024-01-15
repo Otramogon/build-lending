@@ -19,7 +19,10 @@
     .projects-content {
         width: 370px;
     }
-
+    
+    .main-page {
+    background-size: contain;
+}
 }
 
 @media screen and (max-width: 1200px) {
